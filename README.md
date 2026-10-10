@@ -65,3 +65,7 @@ languages and aliases can be added in a future version.
 
 - This is a small fence scanner, not a complete CommonMark parser.
 - The implementation is POSIX-oriented because it uses `getline()` and `mkstemp()`.
+
+## VS code extension
+[vscode extension repo](https://github.com/gpavlun/mdc_vscode_extension/blob/master/README.md)
+
