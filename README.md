@@ -22,12 +22,12 @@ cc -std=c11 -O2 -Wall -Wextra -Wpedantic src/mdc.c -o mdc
 ## Use
 
 ```sh
-./mdc path/to/engine_core.mdc
-./mdc path/to/engine_core.mdh
+./mdc path/to/file.mdc
+./mdc path/to/file.mdh
 ```
 
-`engine_core.mdc` generates `engine_core.c`. If a sibling `engine_core.mdh`
-exists, it is always transpiled first to regenerate `engine_core.h`, even when
+`file.mdc` generates `file.c`. If a sibling `file.mdh`
+exists, it is always transpiled first to regenerate `file.h`, even when
 that header already exists. If header extraction fails, the `.c` file is not
 generated during that invocation. Running `mdc` directly on an `.mdh` always
 regenerates its `.h` output.
@@ -66,6 +66,7 @@ languages and aliases can be added in a future version.
 - This is a small fence scanner, not a complete CommonMark parser.
 - The implementation is POSIX-oriented because it uses `getline()` and `mkstemp()`.
 
+
 ## VS code extension
 [vscode extension repo](https://github.com/gpavlun/mdc_vscode_extension/blob/master/README.md)
-
+You should probably add the binary to your path if you want to use the extension
